@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; //, Inject
 import { NavController } from 'ionic-angular';
 import { Dish } from '../../shared/dish';
 import { DishProvider } from '../../providers/dish/dish';
@@ -21,16 +21,16 @@ export class HomePage implements OnInit {
   dishErrMess : string;
   promoErrMess : string;
   leaderErrMess : string;
-  foruse : string;
+  //foruse : string;
 
   constructor(public navCtrl: NavController,
               private dishservice : DishProvider,
               private promotionservice : PromotionProvider,
-              private leaderservice : LeaderProvider,
-              @Inject('BaseURL') private BaseURL
+              private leaderservice : LeaderProvider//,
+              //@Inject('BaseURL') private BaseURL
             ) {
-                console.log(BaseURL);
-                this.foruse = BaseURL;
+                //console.log(BaseURL);
+                //this.foruse = BaseURL;
   }
 
   ngOnInit() {
