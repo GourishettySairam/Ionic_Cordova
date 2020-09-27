@@ -7,6 +7,12 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>dishdetail</ion-title>
+    <ion-buttons large start>
+      <button ion-button right (click)="showActionSheet()">
+        <ion-icon name="more" size="large" showWhen="android"></ion-icon>
+        <ion-icon ios="ios-more" showWhen="ios" size="large" icon-right  md="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
