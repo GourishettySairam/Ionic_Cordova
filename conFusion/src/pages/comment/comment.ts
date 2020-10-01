@@ -37,9 +37,9 @@ export class CommentPage {
     console.log('ionViewDidLoad CommentPage');
   }
 
-  // dismiss() {
-  //
-  // }
+  dismiss() {
+    this.viewCtrl.dismiss();
+  }
 
   onSubmit(){
     console.log(this.comments);
